@@ -1661,7 +1661,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
+  .projects-text {  
+    display: none;
+  }
 
+  .projects-modal {
+    color: white
+  }
 
   /**
    * CONTACT
@@ -1703,6 +1709,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
+
+  .projects {
+    cursor: pointer
+  }
 
   /**
    * REUSED STYLE
