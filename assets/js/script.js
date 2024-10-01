@@ -36,6 +36,7 @@ const projectsModalCloseBtn = document.querySelector(
 const projectsModalTitle = document.querySelector("[data-project-modal-title]");
 const projectsModalText = document.querySelector("[data-project-modal-text]");
 const projectsModalLink = document.querySelector("[data-project-modal-link]");
+const projectsModalImg = document.querySelector("[data-project-modal-img]");
 
 // modal toggle function
 const modalFunc = function () {
@@ -56,7 +57,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalText.innerHTML = this.querySelector(
       "[data-testimonials-text]"
     ).innerHTML;
-
     modalFunc();
   });
 }
@@ -80,6 +80,8 @@ for (let i = 0; i < projectsItem.length; i++) {
       "href",
       this.querySelector("[data-projects-link]")
     );
+    projectsModalImg.src = this.querySelector("[data-projects-image]").src;
+    projectsModalImg.alt = this.querySelector("[data-projects-image]").alt;
 
     modalFunc();
   });
