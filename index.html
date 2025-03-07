@@ -126,14 +126,17 @@
       <!--- #NAVBAR  -->
       <nav class="navbar">
         <ul class="navbar-list">
+
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>Portfolio</button>
           </li>
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li> -->
+
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
           </li>
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
@@ -145,9 +148,233 @@
       </nav>
 
 
+      <!--- #PORTFOLIO  -->
+
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <!-- Not mobile -->
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Web applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Games</button>
+            </li>
+            <!-- <li class="filter-item">
+                <button data-filter-btn>Prototypes</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Launched</button>
+              </li> -->
+          </ul>
+
+          <!-- Mobile -->
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Games</button>
+              </li>
+              <!-- <li class="select-item">
+                  <button data-select-item>Prototypes</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Launched</button>
+                </li> -->
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Skill Tree Web App -->
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/skill-tree-app.JPG" alt="online school with ai features" loading="lazy"
+                    data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>Home Schooling Web App</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li>A type of online school with AI features and gamification.</li>
+                  <li>This project has been launched.</li>
+                </ul>
+                <a class="projects-text" href="https://parrhesia.io/" data-projects-link>link</a>
+                <p class="project-category">Web applications</p>
+              </div>
+            </li>
+
+            <!-- VR Physics Game -->
+            <li class="project-item  active" data-filter-item data-category="games">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/vr-physics-game.jpg" alt="physics virtual reality game" loading="lazy"
+                    data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>VR physics game prototype</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text"
+                  href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
+                  data-projects-link>link</a>
+                <p class="project-category">Games</p>
+              </div>
+            </li>
+
+            <!-- Conscious Coding Web App and Game -->
+            <li class="project-item  active" data-filter-item data-category="games">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/conscious-coding-game.jpg" alt="multiplayer puzzle game" loading="lazy"
+                    data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>Multiplayer Puzzle Game with Level Editor prototype</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text" href="http://3.212.142.85:3000/login" data-projects-link>link</a>
+                <p class="project-category">Web applications, Games</p>
+              </div>
+            </li>
+
+            <!-- Healthy Lifestyles -->
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/hl-app.JPG" alt="healthy lifestyles" loading="lazy" data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>Healthy Lifestyle Web App and Game prototype</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text" href="https://hlgoingontour.com/login" data-projects-link>link</a>
+                <p class="project-category">Web applications</p>
+              </div>
+            </li>
+
+            <!-- AI Physics Tutor -->
+            <li class="project-item  active" data-filter-item data-category="games">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy" data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>AI Physics Tutor prototype</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text" href="http://ai-physic-tutor.s3-website-us-east-1.amazonaws.com"
+                  data-projects-link>link</a>
+                <p class="project-category">Games</p>
+              </div>
+            </li>
+
+            <!-- Personal Games -->
+            <li class="project-item  active" data-filter-item data-category="games">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/personal-games.JPG" alt="personal games" loading="lazy" data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>Non-Professional Mini Games</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text" href="https://wildworld.academy" data-projects-link>link</a>
+                <p class="project-category">Games</p>
+              </div>
+            </li>
+
+            <!-- Visible Bottleneck Web App and Game -->
+            <li class="project-item  active" data-filter-item data-category="web applications">
+              <div class="project" data-projects-item>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/visible-bottleneck.jpg" alt="psychology web app and game" loading="lazy"
+                    data-projects-image>
+                </figure>
+                <h3 class="project-title" data-projects-title>Psychology Web Application and Simulation</h3>
+                <ul class="projects-text" data-projects-text>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a class="projects-text" href="https://visiblebottleneck.org" data-projects-link>link</a>
+                <p class="project-category">Games, Web Applications</p>
+              </div>
+            </li>
+          </ul>
+
+          <!--
+            - projects modal
+          -->
+          <div class="modal-container" data-project-modal-container>
+            <div class="overlay" data-project-overlay></div>
+            <section class="projects-modal">
+              <button class="modal-close-btn" data-project-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+              <div class="modal-content">
+                <img src="" loading="lazy" data-project-modal-img>
+                <h4 class="h3 modal-title" data-project-modal-title>Daniel lewis</h4>
+                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
+                <div data-project-modal-text>
+                  <p>
+                  </p>
+                </div>
+                <a class="link" data-project-modal-link target="_blank">link</a>
+              </div>
+            </section>
+          </div>
+
+        </section>
+      </article>
+
+
       <!--- #ABOUT  -->
 
-      <article class="about  active" data-page="about">
+      <article class="about" data-page="about">
         <header>
           <h2 class="h2 article-title">About</h2>
         </header>
@@ -401,9 +628,6 @@
       </article>
 
 
-
-
-
       <!--- #RESUME  -->
 
       <article class="resume" data-page="resume">
@@ -447,24 +671,96 @@
             </li>
           </ol>
         </section> -->
-        <!-- 
+
         <section class="timeline">
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Freelance Work Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rad Schools</h4>
+              <span></span>
+              <p class="timeline-text">
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Funuage</h4>
+              <span></span>
+              <p class="timeline-text">
+                I worked on an educational mini game and an educational tool, for teaching a constructed language, using
+                Flutter and the Flame game engine. Included speech to text.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Coding Fairy</h4>
+              <span></span>
+              <p class="timeline-text">
+                I worked on a VR physics game that incorporated speech to text and AI, and also an AI tutor.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Arratreeni</h4>
+              <span></span>
+              <p class="timeline-text">
+                I worked as a junior Unity developer, updating an educational game (teaching pronuciation) for Android.
+              </p>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Simlabs</h4>
+              <span></span>
+              <p class="timeline-text">
+                I worked on an educational VR simulation (called Ocuweld). I was part of a large team: I worked mainly
+                with the Canvas LMS API - connecting it to the VR application.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">LearningFlow</h4>
+              <span></span>
+              <p class="timeline-text">
+                I modified several features of an educational web application. Stack: Vue with PHP (Symphony).
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wild Walks</h4>
+              <span>Project lasted about 2 years</span>
+              <p class="timeline-text">
+                I created a series of courses, on Moodle LMS, about hiking. Work involved instructional design, graphic
+                design and knowledge of LMSes.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Full-time Work Experience</h3>
           </div>
 
           <ol class="timeline-list">
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Learning Technologist</h4>
-              <span>2015 — Present</span>
+              <span>2015 — 2017</span>
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                I build courses for US-based universities and schools on both Canvas and Bridge LMSes.
+                Skills involved include: instructional/educational design, visual design, front-end development and
+                basic graphic design.
               </p>
             </li>
 
@@ -472,9 +768,15 @@
               <h4 class="h4 timeline-item-title">Junior Developer</h4>
               <span>2013 — 2015</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                I worked as an apprentice full-stack web developer, on both the LAMP (PHP) and ASP (C#) stack.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Computer Science Teacher</h4>
+              <span></span>
+              <p class="timeline-text">
+                I taught Computer Science in middle school.
               </p>
             </li>
 
@@ -482,15 +784,29 @@
               <h4 class="h4 timeline-item-title">School ICT Techician</h4>
               <span>2010 — 2013</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                I worked in a few schools troubleshooting IT problems.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">IT tutor</h4>
+              <span></span>
+              <p class="timeline-text">
+                I tutored various IT courses, including technician, networking and databases, for 3 years.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Junior Comics Colourist</h4>
+              <span></span>
+              <p class="timeline-text">
+                I coloured comics for a professional comics company in Cape Town.
               </p>
             </li>
           </ol>
-        </section> -->
+        </section>
 
-        <section class="skill">
+        <!-- <section class="skill">
           <h3 class="h3 skills-title">My skills</h3>
           <ul class="skills-list content-card">
 
@@ -556,6 +872,16 @@
 
             <li class="skills-item">
               <div class="title-wrapper">
+                <h5 class="h5">Mobile Game Development</h5>
+                <data value="20">20%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 20%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
                 <h5 class="h5">Game Design</h5>
                 <data value="10">10%</data>
               </div>
@@ -606,232 +932,8 @@
 
           </ul>
 
-        </section>
+        </section> -->
       </article>
-
-      <!--- #PORTFOLIO  -->
-
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-          <!-- Not mobile -->
-          <ul class="filter-list">
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Web applications</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Games</button>
-            </li>
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Prototypes</button>
-            </li>
-            <li class="filter-item">
-              <button data-filter-btn>Launched</button>
-            </li> -->
-          </ul>
-
-          <!-- Mobile -->
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-select-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
-            <ul class="select-list">
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Web applications</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Games</button>
-              </li>
-              <!-- <li class="select-item">
-                <button data-select-item>Prototypes</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>Launched</button>
-              </li> -->
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <!-- Skill Tree Web App -->
-            <li class="project-item  active" data-filter-item data-category="web applications">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/skill-tree-app.JPG" alt="online school with ai features" loading="lazy"
-                    data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>Home Schooling Web App</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li>A type of online school with AI features and gamification.</li>
-                  <li>This project has been launched.</li>
-                </ul>
-                <a class="projects-text" href="https://parrhesia.io/" data-projects-link>link</a>
-                <p class="project-category">Web applications</p>
-              </div>
-            </li>
-
-            <!-- VR Physics Game -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/vr-physics-game.jpg" alt="physics virtual reality game" loading="lazy"
-                    data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>VR physics game prototype</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text"
-                  href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
-                  data-projects-link>link</a>
-                <p class="project-category">Games</p>
-              </div>
-            </li>
-
-            <!-- Conscious Coding Web App and Game -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/conscious-coding-game.jpg" alt="multiplayer puzzle game" loading="lazy"
-                    data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>Multiplayer Puzzle Game with Level Editor prototype</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text" href="http://3.212.142.85:3000/login" data-projects-link>link</a>
-                <p class="project-category">Web applications, Games</p>
-              </div>
-            </li>
-
-            <!-- Healthy Lifestyles -->
-            <li class="project-item  active" data-filter-item data-category="web applications">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/hl-app.JPG" alt="healthy lifestyles" loading="lazy" data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>Healthy Lifestyle Web App and Game prototype</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text" href="https://hlgoingontour.com/login" data-projects-link>link</a>
-                <p class="project-category">Web applications</p>
-              </div>
-            </li>
-
-            <!-- AI Physics Tutor -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy" data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>AI Physics Tutor prototype</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text" href="http://ai-physic-tutor.s3-website-us-east-1.amazonaws.com"
-                  data-projects-link>link</a>
-                <p class="project-category">Games</p>
-              </div>
-            </li>
-
-            <!-- Personal Games -->
-            <li class="project-item  active" data-filter-item data-category="games">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/personal-games.JPG" alt="personal games" loading="lazy" data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>Non-Professional Mini Games</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text" href="https://wildworld.academy" data-projects-link>link</a>
-                <p class="project-category">Games</p>
-              </div>
-            </li>
-
-            <!-- Visible Bottleneck Web App and Game -->
-            <li class="project-item  active" data-filter-item data-category="web applications">
-              <div class="project" data-projects-item>
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/visible-bottleneck.jpg" alt="psychology web app and game" loading="lazy"
-                    data-projects-image>
-                </figure>
-                <h3 class="project-title" data-projects-title>Psychology Web Application and Simulation</h3>
-                <ul class="projects-text" data-projects-text>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a class="projects-text" href="https://visiblebottleneck.org" data-projects-link>link</a>
-                <p class="project-category">Games, Web Applications</p>
-              </div>
-            </li>
-          </ul>
-
-          <!--
-          - projects modal
-        -->
-          <div class="modal-container" data-project-modal-container>
-            <div class="overlay" data-project-overlay></div>
-            <section class="projects-modal">
-              <button class="modal-close-btn" data-project-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-              <div class="modal-content">
-                <img src="" loading="lazy" data-project-modal-img>
-                <h4 class="h3 modal-title" data-project-modal-title>Daniel lewis</h4>
-                <!-- <time datetime="2021-06-14">14 June, 2021</time> -->
-                <div data-project-modal-text>
-                  <p>
-                  </p>
-                </div>
-                <a class="link" data-project-modal-link target="_blank">link</a>
-              </div>
-            </section>
-          </div>
-
-        </section>
-      </article>
-
 
       <!--- #BLOG  -->
       <article class="blog" data-page="blog">
