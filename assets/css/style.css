@@ -727,6 +727,16 @@ main {
 
 .modal-title { margin-bottom: 4px; }
 
+.modal-content{
+  width: 100%;
+}
+
+.modal-content > img{
+  width: 100%;
+  aspect-ratio: 60 / 45;
+  object-fit: contain;
+}
+
 .modal-content time {
   font-size: var(--fs-6);
   color: var(--light-gray-70);
@@ -1267,7 +1277,6 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #PORTFOLIO, BLOG 
    */
 
-  .project-img,
   .blog-banner-box { height: auto; }
 
 }
