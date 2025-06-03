@@ -127,7 +127,7 @@
 
 a { text-decoration: none; }
 
-li { list-style: none; }
+ li { list-style: none; } 
 
 img, ion-icon, a, button, time, span { display: block; }
 
@@ -683,6 +683,19 @@ main {
   z-index: 2;
 }
 
+.projects-modal li {
+ list-style: circle; 
+}
+
+.projects-modal * {
+  margin: revert;
+  padding: revert;
+}
+
+.projects-modal a {
+  display: inline;
+}
+
 .modal-container.active .testimonials-modal {
   transform: scale(1);
   opacity: 1;
@@ -746,8 +759,7 @@ main {
 
 .modal-content p {
   color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-size: var(--fs-6);  
   line-height: 1.6;
 }
 
@@ -1033,7 +1045,7 @@ main {
 .project-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: var(--transition-1);
 }
 
