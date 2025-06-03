@@ -685,6 +685,7 @@ main {
 
 .projects-modal li {
  list-style: circle; 
+ color: white;
 }
 
 .projects-modal * {
@@ -916,6 +917,11 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+ .link {
+    color: lightblue;
+    text-decoration: underline;
+  }
+
 
 .projects-text {  
     display: none
@@ -1688,13 +1694,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .projects-modal {
     color: white
-  }
-
-  .link {
-    color: lightblue;
-    text-decoration: underline;
-  }
-
+  } 
 
   /**
    * CONTACT
