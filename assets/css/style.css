@@ -917,6 +917,10 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
+.projects-text {  
+    display: none
+  }
+
 .filter-list { display: none; }
 
 .filter-select-box {
@@ -1563,7 +1567,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .blog-content { padding: 25px; }
 
-
+  
 
   /**
    * #CONTACT
@@ -1681,10 +1685,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* portfolio and blog grid */
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
-
-  .projects-text {  
-    display: none;
-  }
 
   .projects-modal {
     color: white
