@@ -155,6 +155,20 @@
           <h2 class="h2 article-title">Work</h2>
         </header>
 
+        <!-- Image Slider -->
+
+        <div class="slider">
+          <div class="arrow left" onclick="moveSlide(-1)">&#10094;</div>
+          <div class="arrow right" onclick="moveSlide(1)">&#10095;</div>
+          <div class="slides" id="slides">
+            <!-- Last clone will be added by JS -->
+            <img src="https://picsum.photos/id/1015/600/350" alt="1" />
+            <img src="https://picsum.photos/id/1016/600/350" alt="2" />
+            <img src="https://picsum.photos/id/1018/600/350" alt="3" />
+            <!-- First clone will be added by JS -->
+          </div>
+        </div>
+
         <section class="projects">
           <!-- Not mobile -->
           <ul class="filter-list">
@@ -1243,6 +1257,7 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/slide.js"></script>
 
   <!--
     - ionicon link
