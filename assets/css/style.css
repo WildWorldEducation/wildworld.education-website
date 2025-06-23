@@ -747,7 +747,7 @@ main {
 
 .modal-content > img{
   width: 100%;
-  aspect-ratio: 60 / 45;
+  /* aspect-ratio: 60 / 45; */
   object-fit: contain;
 }
 
