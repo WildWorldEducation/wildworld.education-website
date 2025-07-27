@@ -2,7 +2,7 @@
 
 // element toggle function
 const elementToggleFunc = function (elem) {
-  elem.classList.toggle("active"); 
+  elem.classList.toggle("active");
 };
 
 // sidebar variables
@@ -36,7 +36,9 @@ const projectsModalCloseBtn = document.querySelector(
 const projectsModalTitle = document.querySelector("[data-project-modal-title]");
 const projectsModalText = document.querySelector("[data-project-modal-text]");
 const projectsModalLink = document.querySelector("[data-project-modal-link]");
-const projectsModalImg = document.querySelector("[data-project-modal-img]");
+const projectsModalImg1 = document.querySelector("[data-project-modal-img-1]");
+const projectsModalImg2 = document.querySelector("[data-project-modal-img-2]");
+const projectsModalImg3 = document.querySelector("[data-project-modal-img-3]");
 
 // modal toggle function
 const modalFunc = function () {
@@ -80,8 +82,12 @@ for (let i = 0; i < projectsItem.length; i++) {
       "href",
       this.querySelector("[data-projects-link]")
     );
-    projectsModalImg.src = this.querySelector("[data-projects-image]").src;
-    projectsModalImg.alt = this.querySelector("[data-projects-image]").alt;
+    projectsModalImg1.src = this.querySelector("[data-projects-image-1]").src;
+    projectsModalImg1.alt = this.querySelector("[data-projects-image-1]").alt;
+    // projectsModalImg2.src = this.querySelector("[data-projects-image-2]").src;
+    // projectsModalImg2.alt = this.querySelector("[data-projects-image-2]").alt;
+    // projectsModalImg3.src = this.querySelector("[data-projects-image-3]").src;
+    // projectsModalImg3.alt = this.querySelector("[data-projects-image-3]").alt;
 
     modalFunc();
   });
