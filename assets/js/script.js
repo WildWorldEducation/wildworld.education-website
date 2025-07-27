@@ -84,10 +84,10 @@ for (let i = 0; i < projectsItem.length; i++) {
     );
     projectsModalImg1.src = this.querySelector("[data-projects-image-1]").src;
     projectsModalImg1.alt = this.querySelector("[data-projects-image-1]").alt;
-    projectsModalImg2.src = this.querySelector("[data-projects-image-2]").src;
-    projectsModalImg2.alt = this.querySelector("[data-projects-image-2]").alt;
-    projectsModalImg3.src = this.querySelector("[data-projects-image-3]").src;
-    projectsModalImg3.alt = this.querySelector("[data-projects-image-3]").alt;
+    // projectsModalImg2.src = this.querySelector("[data-projects-image-2]").src;
+    // projectsModalImg2.alt = this.querySelector("[data-projects-image-2]").alt;
+    // projectsModalImg3.src = this.querySelector("[data-projects-image-3]").src;
+    // projectsModalImg3.alt = this.querySelector("[data-projects-image-3]").alt;
 
     modalFunc();
   });
