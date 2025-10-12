@@ -70,28 +70,28 @@ overlay.addEventListener("click", modalFunc);
 projectsOverlay.addEventListener("click", modalFunc);
 
 // add click event to all modal items
-for (let i = 0; i < projectsItem.length; i++) {
-  projectsItem[i].addEventListener("click", function () {
-    projectsModalTitle.innerHTML = this.querySelector(
-      "[data-projects-title]"
-    ).innerHTML;
-    projectsModalText.innerHTML = this.querySelector(
-      "[data-projects-text]"
-    ).innerHTML;
-    projectsModalLink.setAttribute(
-      "href",
-      this.querySelector("[data-projects-link]")
-    );
-    projectsModalImg1.src = this.querySelector("[data-projects-image-1]").src;
-    projectsModalImg1.alt = this.querySelector("[data-projects-image-1]").alt;
-    // projectsModalImg2.src = this.querySelector("[data-projects-image-2]").src;
-    // projectsModalImg2.alt = this.querySelector("[data-projects-image-2]").alt;
-    // projectsModalImg3.src = this.querySelector("[data-projects-image-3]").src;
-    // projectsModalImg3.alt = this.querySelector("[data-projects-image-3]").alt;
+// for (let i = 0; i < projectsItem.length; i++) {
+//   projectsItem[i].addEventListener("click", function () {
+//     projectsModalTitle.innerHTML = this.querySelector(
+//       "[data-projects-title]"
+//     ).innerHTML;
+//     projectsModalText.innerHTML = this.querySelector(
+//       "[data-projects-text]"
+//     ).innerHTML;
+//     projectsModalLink.setAttribute(
+//       "href",
+//       this.querySelector("[data-projects-link]")
+//     );
+//     projectsModalImg1.src = this.querySelector("[data-projects-image-1]").src;
+//     projectsModalImg1.alt = this.querySelector("[data-projects-image-1]").alt;
+//     // projectsModalImg2.src = this.querySelector("[data-projects-image-2]").src;
+//     // projectsModalImg2.alt = this.querySelector("[data-projects-image-2]").alt;
+//     // projectsModalImg3.src = this.querySelector("[data-projects-image-3]").src;
+//     // projectsModalImg3.alt = this.querySelector("[data-projects-image-3]").alt;
 
-    modalFunc();
-  });
-}
+//     modalFunc();
+//   });
+// }
 
 // custom select variables
 const select = document.querySelector("[data-select]");
