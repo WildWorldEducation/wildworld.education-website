@@ -38,7 +38,7 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
+  --eerie-black-2: hsl(240, 2%, 12%, 0.9);
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -153,7 +153,7 @@ html {
 }
 
 body {
-  background: var(--smoky-black) url('https://www.publicdomainpictures.net/pictures/40000/velka/dinosaurs-illustration.jpg') no-repeat center center fixed;
+  background: var(--smoky-black) url('../images/bg.png') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -167,7 +167,8 @@ body {
 
 .sidebar,
 article {
-  background: var(--eerie-black-2);
+  background: var(--eerie-black-2); 
+
   border: 1px solid var(--jet);
   border-radius: 20px;
   padding: 15px;
@@ -1568,8 +1569,10 @@ textarea.form-input::-webkit-resizer {
    */
 
   main {
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 100px;
+    max-width: 1200px;
+    margin:auto;
   }
 
 
@@ -2045,6 +2048,7 @@ textarea.form-input::-webkit-resizer {
     position: relative;
     width: max-content;
     margin: auto;
+    max-width: 1200px;
   }
 
 
