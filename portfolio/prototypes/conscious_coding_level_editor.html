@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parrhesia - Portfolio Project</title>
+    <title>Puzzle Web Game Level Editor - Portfolio Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--- favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
+    <!--- custom css link -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!--- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Plausible analytics snippet -->
+    <script defer data-domain="wildworld.education" src="https://plausible.io/js/script.js"></script>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            color: white;
         }
+
         header {
             text-align: center;
-            padding: 20px;
+            padding: 5px;
             background-color: #333;
             color: white;
         }
+
         main {
             max-width: 800px;
             margin: 0 auto;
-            background-color: white;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        li {
+            list-style: disc;
+        }
+
+
         footer {
             text-align: center;
             padding: 10px;
@@ -34,30 +54,88 @@
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Parrhesia</h1>
-        <p>An LMS with AI tutors and a skilltree progression system</p>
+        <h1>Puzzle Web Game Level Editor</h1>
+        <p>Level editor for a multiplayer web puzzle game for kids</p>
     </header>
-
-    <main>
-        <section>
-            <h2>About the Project</h2>
-            <p>This is a portfolio page for the Parrhesia project. Add your content here.</p>
+    <div class="container">
+        <section class="screenshots row mt-3">
+            <h2 class="h2 article-title">Screenshots</h2>
+            <figure class="project-img">
+                <img src="../../assets/images/conscious-coding-level-editor.jpg" alt="Puzzle Web Game Level Editor interface" loading="lazy">
+            </figure>
         </section>
 
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>AI-powered tutoring</li>
-                <li>Skill tree progression</li>
-                <li>Interactive learning modules</li>
-            </ul>
+        <section class="project-overview row mt-3">
+            <div class="col-10">
+                <h2 class="h2 article-title">Project Overview</h2>
+                <ul>
+                    <li>
+                        <p><strong>Purpose:</strong> To provide a user-friendly tool for creating custom levels in a multiplayer web puzzle game designed for children.</p>
+                    </li>
+                    <li>
+                        <p><strong>Description:</strong> A web-based level editor that allows users to design and build puzzle challenges for an educational multiplayer game.</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-2">
+                <h2 class="h2 article-title">Client</h2>
+                <a class="link" href="https://consciouscoding.com/" target="_blank">Conscious Coding</a>
+            </div>
         </section>
-    </main>
+
+        <section class="features row mt-2">
+            <div class="col-10">
+                <h2 class="h2 article-title">Key Features</h2>
+                <ul>
+                    <li>
+                        <p><strong>Drag-and-Drop Interface:</strong> Intuitive design tools for placing puzzle elements and obstacles.</p>
+                    </li>
+                    <li>
+                        <p><strong>Real-Time Preview:</strong> Instant visualization of level designs as they are created.</p>
+                    </li>
+                    <li>
+                        <p><strong>Element Library:</strong> Collection of puzzle components, characters, and interactive objects.</p>
+                    </li>
+                    <li>
+                        <p><strong>Save and Load Functionality:</strong> Ability to save work-in-progress and load existing levels for editing.</p>
+                    </li>
+                    <li>
+                        <p><strong>Export Capabilities:</strong> Easy sharing and integration of created levels with the main game.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h2 class="h2 article-title">Link</h2>
+                <li><a class="link" href="https://pathways-map-editor.s3.us-east-1.amazonaws.com/index.html" target="_blank">Level Editor</a></li>
+            </div>
+        </section>
+
+        <section class="technology row mt-2">
+            <div class="col">
+                <h2 class="h2 article-title">Tech Stack</h2>
+                <ul>
+                    <li>
+                        <p><strong>Game Engine:</strong> Unity WebGL.</p>
+                    </li>
+                    <li>
+                        <p><strong>Integration:</strong> JSON files for connecting with the main puzzle game engine.</p>
+                    </li>
+                    <li>
+                        <p><strong>Deployment:</strong> AWS S3 for hosting the web-based editor application.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
 
     <footer>
         <p>&copy; 2025 Wild World Education. All rights reserved.</p>
     </footer>
 </body>
+
 </html>
