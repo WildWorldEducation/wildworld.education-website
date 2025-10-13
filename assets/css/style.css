@@ -1009,6 +1009,15 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+
+.portfolio-page section {
+  color: white;
+  background-color: var(--eerie-black-2);
+  border-radius: 5px;
+}
+
+.screenshots img {max-height: 300px; margin: auto;}
+
 .link {
   color: lightblue;
   text-decoration: underline;
@@ -2274,5 +2283,9 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+
+
+
+
 
 }
