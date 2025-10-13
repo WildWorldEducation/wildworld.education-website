@@ -25,49 +25,49 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
 // projects variables
-const projectsItem = document.querySelectorAll("[data-projects-item]");
-const projectModalContainer = document.querySelector(
-  "[data-project-modal-container]"
-);
-const projectsOverlay = document.querySelector("[data-project-overlay]");
-const projectsModalCloseBtn = document.querySelector(
-  "[data-project-modal-close-btn]"
-);
-const projectsModalTitle = document.querySelector("[data-project-modal-title]");
-const projectsModalText = document.querySelector("[data-project-modal-text]");
-const projectsModalLink = document.querySelector("[data-project-modal-link]");
-const projectsModalImg1 = document.querySelector("[data-project-modal-img-1]");
-const projectsModalImg2 = document.querySelector("[data-project-modal-img-2]");
-const projectsModalImg3 = document.querySelector("[data-project-modal-img-3]");
+// const projectsItem = document.querySelectorAll("[data-projects-item]");
+// const projectModalContainer = document.querySelector(
+//   "[data-project-modal-container]"
+// );
+// const projectsOverlay = document.querySelector("[data-project-overlay]");
+// const projectsModalCloseBtn = document.querySelector(
+//   "[data-project-modal-close-btn]"
+// );
+// const projectsModalTitle = document.querySelector("[data-project-modal-title]");
+// const projectsModalText = document.querySelector("[data-project-modal-text]");
+// const projectsModalLink = document.querySelector("[data-project-modal-link]");
+// const projectsModalImg1 = document.querySelector("[data-project-modal-img-1]");
+// const projectsModalImg2 = document.querySelector("[data-project-modal-img-2]");
+// const projectsModalImg3 = document.querySelector("[data-project-modal-img-3]");
 
-// modal toggle function
-const modalFunc = function () {
-  modalContainer.classList.toggle("active");
-  projectModalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-  projectsOverlay.classList.toggle("active");
-};
+// // modal toggle function
+// const modalFunc = function () {
+//   modalContainer.classList.toggle("active");
+//   projectModalContainer.classList.toggle("active");
+//   overlay.classList.toggle("active");
+//   projectsOverlay.classList.toggle("active");
+// };
 
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-  testimonialsItem[i].addEventListener("click", function () {
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector(
-      "[data-testimonials-title]"
-    ).innerHTML;
-    modalText.innerHTML = this.querySelector(
-      "[data-testimonials-text]"
-    ).innerHTML;
-    modalFunc();
-  });
-}
+// // add click event to all modal items
+// for (let i = 0; i < testimonialsItem.length; i++) {
+//   testimonialsItem[i].addEventListener("click", function () {
+//     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+//     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+//     modalTitle.innerHTML = this.querySelector(
+//       "[data-testimonials-title]"
+//     ).innerHTML;
+//     modalText.innerHTML = this.querySelector(
+//       "[data-testimonials-text]"
+//     ).innerHTML;
+//     modalFunc();
+//   });
+// }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", modalFunc);
-projectsModalCloseBtn.addEventListener("click", modalFunc);
-overlay.addEventListener("click", modalFunc);
-projectsOverlay.addEventListener("click", modalFunc);
+// // add click event to modal close button
+// modalCloseBtn.addEventListener("click", modalFunc);
+// projectsModalCloseBtn.addEventListener("click", modalFunc);
+// overlay.addEventListener("click", modalFunc);
+// projectsOverlay.addEventListener("click", modalFunc);
 
 // add click event to all modal items
 // for (let i = 0; i < projectsItem.length; i++) {

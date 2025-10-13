@@ -153,7 +153,7 @@ html {
 }
 
 body {
-  background: var(--smoky-black) url('../images/bg.png') no-repeat center center fixed;
+  background: var(--smoky-black) url('../images/map.png') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -2184,10 +2184,13 @@ textarea.form-input::-webkit-resizer {
    */
 
   main {
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 25px;
+     max-width: 1200px;
+    margin-inline: auto;
   }
 
   .main-content {
