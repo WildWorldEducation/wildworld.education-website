@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
     <!--- custom css link -->
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
     <!--- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +25,11 @@
     <script defer data-domain="wildworld.education" src="https://plausible.io/js/script.js"></script>
 
     <style>
+        /* Slideshow */
+        .mySlides {
+            display: none;
+        }
+
         header {
             text-align: center;
             padding: 5px;
@@ -65,8 +72,17 @@
     <div class="container portfolio-page">
         <div class="screenshots row mt-3">
             <div class="col">
-                <img src="../../assets/images/hl-app.JPG" alt="Healthy Lifestyles web application interface"
-                    loading="lazy" class="rounded img-thumbnail img-fluid">
+                <!-- Image slider -->
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides" src="../../assets/images/healthy_lifestyles/1.jpg">
+                    <img class="mySlides" src="../../assets/images/healthy_lifestyles/2.png">
+                    <img class="mySlides" src="../../assets/images/healthy_lifestyles/3.png">
+                    <img class="mySlides" src="../../assets/images/healthy_lifestyles/4.png">
+                    <img class="mySlides" src="../../assets/images/healthy_lifestyles/5.png">
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
             </div>
         </div>
 
@@ -148,6 +164,27 @@
     <footer>
         <p>&copy; 2025 Wild World Education. All rights reserved.</p>
     </footer>
+
+    <!-- Code for image slider -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
