@@ -167,7 +167,7 @@ body {
 
 .sidebar,
 article {
-  background: var(--eerie-black-2); 
+  background: var(--eerie-black-2);
 
   border: 1px solid var(--jet);
   border-radius: 20px;
@@ -299,7 +299,7 @@ article.active {
   padding-top: 45px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  cursor: pointer;
+  /* cursor: pointer; */
   z-index: 1;
 }
 
@@ -665,8 +665,8 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
   display: -webkit-box;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
+  /* line-clamp: 4;
+  -webkit-line-clamp: 4; */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1016,7 +1016,10 @@ main {
   border-radius: 5px;
 }
 
-.screenshots img {max-height: 300px; margin: auto;}
+.screenshots img {
+  max-height: 300px;
+  margin: auto;
+}
 
 .link {
   color: lightblue;
@@ -1580,7 +1583,7 @@ textarea.form-input::-webkit-resizer {
   main {
     margin-top: 60px;
     margin-bottom: 100px;
-    margin:auto;
+    margin: auto;
   }
 
 
@@ -1730,8 +1733,8 @@ textarea.form-input::-webkit-resizer {
   }
 
   .testimonials-text {
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    /* line-clamp: 2;
+    -webkit-line-clamp: 2; */
   }
 
   /* testimonials modal */
@@ -2198,7 +2201,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
     align-items: stretch;
     gap: 25px;
-     max-width: 1200px;
+    max-width: 1200px;
     margin-inline: auto;
   }
 
