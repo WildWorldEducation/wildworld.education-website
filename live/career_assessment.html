@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web application designed for teachers and students featuring
+                            engaging web games on healthy living topics.">
+    <title>Career Assessment - Portfolio Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--- favicon -->
+    <link rel="shortcut icon" href="../../assets/images/logo.ico" type="image/x-icon">
+    <!--- custom css link -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <!--- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Plausible analytics snippet -->
+    <script defer data-domain="wildworld.education" src="https://plausible.io/js/script.js"></script>
+
+    <style>
+        /* Slideshow */
+        .mySlides {
+            display: none;
+        }
+
+        header {
+            text-align: center;
+            padding: 5px;
+            background-color: #333;
+            color: white;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        li {
+            list-style: disc;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .article-title {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Healthy Lifestyles - Going On Tour</h1>
+        <p>Resource to help kids live healthy</p>
+    </header>
+    <div class="container portfolio-page">
+        <div class="screenshots row mt-3">
+            <div class="col">
+                <!-- Image slider -->
+                <div class="w3-content w3-display-container">
+                    <img class="mySlides rounded img-fluid" src="../../assets/images/healthy_lifestyles/1.jpg">
+                    <img class="mySlides rounded img-fluid" src="../../assets/images/healthy_lifestyles/2.png">
+                    <img class="mySlides rounded img-fluid" src="../../assets/images/healthy_lifestyles/3.png">
+                    <img class="mySlides rounded img-fluid" src="../../assets/images/healthy_lifestyles/4.png">
+                    <img class="mySlides rounded img-fluid" src="../../assets/images/healthy_lifestyles/5.png">
+
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="project-overview row mt-3">
+            <div class="col-md-10">
+                <h2 class="h2 article-title">Project Overview</h2>
+                <ul>
+                    <li>
+                        <p><strong>Purpose:</strong> To teach kids about healthy lifestyles through interactive web
+                            games and educational content.</p>
+                    </li>
+                    <li>
+                        <p><strong>Description:</strong> Web application designed for teachers and students featuring
+                            engaging web games on healthy living topics.</p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h2 class="h2 article-title">Client</h2>
+                <a class="link" href="https://www.radschools.org/" target="_blank">Rad Schools</a>
+            </div>
+        </section>
+
+        <section class="features row mt-2">
+            <div class="col-md-10">
+                <h2 class="h2 article-title">Key Features</h2>
+                <ul>
+                    <li>
+                        <p><strong>Interactive Web Games:</strong> Fun, educational games that teach healthy lifestyle
+                            concepts.</p>
+                    </li>
+                    <li>
+                        <p><strong>Teacher Dashboard:</strong> Basic way for educators to track student progress.</p>
+                    </li>
+
+                    <li>
+                        <p><strong>Educational Content:</strong> Comprehensive lessons on nutrition, exercise, and
+                            wellness.</p>
+                    </li>
+
+                    <li>
+                        <p><strong>Responsive Design:</strong> Accessible on various devices for flexible learning
+                            environments.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h2 class="h2 article-title">Link</h2>
+                <a class="link" href="https://hlgoingontour.com/login" target="_blank">Live Application</a>
+            </div>
+        </section>
+
+        <section class="technology row mt-2">
+            <div class="col">
+                <h2 class="h2 article-title">Tech Stack</h2>
+                <ul>
+                    <li>
+                        <p><strong>Backend:</strong> Node.js and Express for server-side logic and API development.</p>
+                    </li>
+                    <li>
+                        <p><strong>Frontend:</strong> Vue.js for a dynamic and responsive user interface.</p>
+                    </li>
+                    <li>
+                        <p><strong>Database:</strong> MariaDB for reliable data storage and management.</p>
+                    </li>
+                    <li>
+                        <p><strong>Cloud Infrastructure:</strong> AWS for scalable hosting and deployment.</p>
+                    </li>
+                    <li>
+                        <p><strong>Game Development:</strong> Phaser.js for creating interactive web games.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Wild World Education. All rights reserved.</p>
+    </footer>
+
+    <!-- Code for image slider -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
