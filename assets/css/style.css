@@ -606,11 +606,27 @@ main {
 }
 
 .service-item-2::before {
-  background: green;
+  background: lightgreen;
+}
+
+.service-item-2-title {
+  color: black;
+}
+
+.service-item-2-text {
+  color: black !important;
 }
 
 .service-item-3::before {
-  background: blue;
+  background: lightskyblue;
+}
+
+.service-item-3-title {
+  color: black;
+}
+
+.service-item-3-text {
+  color: black !important;
 }
 
 .service-icon-box {
@@ -1763,7 +1779,7 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
+
   }
 
   .testimonials-text {
