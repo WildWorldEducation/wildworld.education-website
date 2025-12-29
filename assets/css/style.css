@@ -525,6 +525,13 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
+.cta-btn {
+  margin: auto;
+  background: #ffffa1;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
 .about .article-title {
   margin-bottom: 15px;
 }
