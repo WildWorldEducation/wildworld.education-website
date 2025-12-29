@@ -168,15 +168,21 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+    // Remove active class from all pages and nav links
+    pages.forEach(page => page.classList.remove("active"));
+    navigationLinks.forEach(link => link.classList.remove("active"));
+
+    // Find the corresponding page
+    const targetPage = this.innerHTML.toLowerCase();
+    const page = Array.from(pages).find(p => p.dataset.page === targetPage);
+
+    if (page) {
+      page.classList.add("active");
     }
+
+    // Add active to the clicked nav link
+    this.classList.add("active");
+
+    window.scrollTo(0, 0);
   });
 }
