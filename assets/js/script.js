@@ -202,3 +202,23 @@ ctaBtn.addEventListener("click", function () {
 
   window.scrollTo(0, 0);
 });
+
+
+// Portfolio filter buttons
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectItems = document.querySelectorAll(".project-item");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    console.log("Filter button clicked");
+    const category = button.getAttribute("data-category");
+
+    projectItems.forEach(item => {
+      if (item.getAttribute("data-category").includes(category) || category === "all") {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+});
