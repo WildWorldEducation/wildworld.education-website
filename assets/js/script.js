@@ -210,8 +210,9 @@ const projectItems = document.querySelectorAll(".project-item");
 
 filterButtons.forEach(button => {
   button.addEventListener("click", () => {
-    console.log("Filter button clicked");
+
     const category = button.getAttribute("data-category");
+    console.log(category);
 
     projectItems.forEach(item => {
       if (item.getAttribute("data-category").includes(category) || category === "all") {
