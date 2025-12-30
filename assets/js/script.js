@@ -192,9 +192,13 @@ const ctaBtn = document.querySelector(".cta-btn");
 const contactArticle = document.querySelector(".contact");
 
 ctaBtn.addEventListener("click", function () {
-  console.log("print");
+
   pages.forEach((page) => page.classList.remove("active"));
   navigationLinks.forEach((link) => link.classList.remove("active"));
   contactArticle.classList.add("active");
+
+  const contactLink = document.getElementById("contact-link");
+  contactLink.classList.add("active");
+
   window.scrollTo(0, 0);
 });
