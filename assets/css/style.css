@@ -940,10 +940,10 @@ main {
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
-
+/* 
 .article-title {
   margin-bottom: 30px;
-}
+} */
 
 
 /**
@@ -1614,8 +1614,8 @@ textarea.form-input::-webkit-resizer {
   }
 
   .article-title {
-    font-weight: var(--fw-600);
-    padding-bottom: 15px;
+    /* font-weight: var(--fw-600);
+    padding-bottom: 15px; */
   }
 
   .article-title::after {
@@ -1885,6 +1885,19 @@ textarea.form-input::-webkit-resizer {
    * #PORTFOLIO, BLOG
    */
 
+  .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .filter-btn {
+    border-radius: 15px;
+    background-color: silver;
+    margin-right: 5px;
+  }
+
+
   .project-img,
   .blog-banner-box {
     border-radius: 16px;
@@ -2005,9 +2018,9 @@ textarea.form-input::-webkit-resizer {
    * PORTFOLIO
    */
 
-  .article-title {
+  /* .article-title {
     padding-bottom: 20px;
-  }
+  } */
 
   .filter-select-box {
     display: none;
