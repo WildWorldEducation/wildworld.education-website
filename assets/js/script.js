@@ -169,12 +169,12 @@ const pages = document.querySelectorAll("[data-page]");
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
     // Remove active class from all pages and nav links
-    pages.forEach(page => page.classList.remove("active"));
-    navigationLinks.forEach(link => link.classList.remove("active"));
+    pages.forEach((page) => page.classList.remove("active"));
+    navigationLinks.forEach((link) => link.classList.remove("active"));
 
     // Find the corresponding page
     const targetPage = this.innerHTML.toLowerCase();
-    const page = Array.from(pages).find(p => p.dataset.page === targetPage);
+    const page = Array.from(pages).find((p) => p.dataset.page === targetPage);
 
     if (page) {
       page.classList.add("active");
@@ -186,3 +186,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
     window.scrollTo(0, 0);
   });
 }
+
+// Add functionality to open the CONTACT article
+const ctaBtn = document.querySelector(".cta-btn");
+const contactArticle = document.querySelector(".contact");
+
+ctaBtn.addEventListener("click", function () {
+  console.log("print");
+  pages.forEach((page) => page.classList.remove("active"));
+  navigationLinks.forEach((link) => link.classList.remove("active"));
+  contactArticle.classList.add("active");
+  window.scrollTo(0, 0);
+});
