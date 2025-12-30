@@ -1066,6 +1066,18 @@ main {
   #PORTFOLIO
 \*-----------------------------------*/
 
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.filter-btn {
+  border-radius: 15px;
+  background-color: silver;
+  margin-right: 5px;
+}
+
 .portfolio-page section {
   color: white;
   background-color: var(--eerie-black-2);
@@ -1558,8 +1570,6 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
-
-
   /**
    * #PORTFOLIO, BLOG 
    */
@@ -1567,11 +1577,7 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
   }
-
 }
-
-
-
 
 
 /**
@@ -1579,6 +1585,11 @@ textarea.form-input::-webkit-resizer {
  */
 
 @media (min-width: 580px) {
+  .filter-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 
   /**
    * CUSTOM PROPERTY
@@ -1884,18 +1895,6 @@ textarea.form-input::-webkit-resizer {
   /**
    * #PORTFOLIO, BLOG
    */
-
-  .filter-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .filter-btn {
-    border-radius: 15px;
-    background-color: silver;
-    margin-right: 5px;
-  }
 
 
   .project-img,
