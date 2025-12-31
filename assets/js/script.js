@@ -188,20 +188,20 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // Add functionality to open the CONTACT article
-const ctaBtn = document.querySelector(".cta-btn");
-const contactArticle = document.querySelector(".contact");
+// const ctaBtn = document.querySelector(".cta-btn");
+// const contactArticle = document.querySelector(".contact");
 
-ctaBtn.addEventListener("click", function () {
+// ctaBtn.addEventListener("click", function () {
 
-  pages.forEach((page) => page.classList.remove("active"));
-  navigationLinks.forEach((link) => link.classList.remove("active"));
-  contactArticle.classList.add("active");
+//   pages.forEach((page) => page.classList.remove("active"));
+//   navigationLinks.forEach((link) => link.classList.remove("active"));
+//   contactArticle.classList.add("active");
 
-  const contactLink = document.getElementById("contact-link");
-  contactLink.classList.add("active");
+//   const contactLink = document.getElementById("contact-link");
+//   contactLink.classList.add("active");
 
-  window.scrollTo(0, 0);
-});
+//   window.scrollTo(0, 0);
+// });
 
 
 // Portfolio filter buttons

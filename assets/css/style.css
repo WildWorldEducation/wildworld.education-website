@@ -160,10 +160,11 @@ html {
 body {
   background: var(--smoky-black) url('../images/map.png') no-repeat center center fixed;
   background-size: cover;
+  /* Ensure the background scrolls with the content */
+  /* Add a dark overlay */
+  position: relative;
+  margin: 0;
 }
-
-
-
 
 
 /*-----------------------------------*\
@@ -604,7 +605,7 @@ main {
 }
 
 .service-item-1::before {
-  background: lightgoldenrodyellow;
+  background: wheat;
 }
 
 .service-item-1-title {
@@ -2148,7 +2149,7 @@ textarea.form-input::-webkit-resizer {
     left: auto;
     right: 0;
     width: max-content;
-    border-radius: 0 20px;
+    border-radius: 20px;
     padding: 0 20px;
     box-shadow: none;
   }
