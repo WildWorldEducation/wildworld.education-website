@@ -566,6 +566,7 @@ main {
 .service-title {
   margin-bottom: 20px;
   color: #ffffa1;
+  margin-top: 0;
 }
 
 .service-list {
@@ -1070,6 +1071,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -1086,7 +1088,7 @@ main {
 }
 
 .screenshots img {
-  max-height: 300px;
+  max-height: 400px;
   margin: auto;
 }
 
@@ -1590,6 +1592,7 @@ textarea.form-input::-webkit-resizer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    /* margin-top: 70px; */
   }
 
   .filter-btn {
@@ -1666,8 +1669,8 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 180px;
-    margin-bottom: 30px;
+    /* max-height: 180px; */
+    margin-bottom: 10px;
   }
 
   .sidebar.active {
@@ -1953,8 +1956,6 @@ textarea.form-input::-webkit-resizer {
 
 
 
-
-
 /**
  * responsive larger than 768px screen
  */
@@ -2082,8 +2083,6 @@ textarea.form-input::-webkit-resizer {
 
 
 
-
-
 /**
  * responsive larger than 1024px screen
  */
@@ -2099,11 +2098,9 @@ textarea.form-input::-webkit-resizer {
     /**
     * shadow
     */
-
     --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.125);
     --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.125);
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
-
   }
 
 
@@ -2121,7 +2118,6 @@ textarea.form-input::-webkit-resizer {
     width: 950px;
     box-shadow: var(--shadow-5);
   }
-
 
 
   /**
@@ -2146,7 +2142,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .navbar {
-    position: absolute;
+    position: relative;
     bottom: auto;
     top: 0;
     left: auto;
@@ -2274,7 +2270,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   main {
-    margin-top: 60px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -2297,7 +2293,7 @@ textarea.form-input::-webkit-resizer {
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 20px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
