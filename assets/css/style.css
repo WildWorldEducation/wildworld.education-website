@@ -1769,7 +1769,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: flex-start;
     align-items: flex-start; */
     gap: 18px;
-    padding: 30px;
+    margin-bottom: 10px;
   }
 
   .service-item li {
@@ -2264,9 +2264,9 @@ textarea.form-input::-webkit-resizer {
     width: auto;
   }
 
-  article {
+  /* article {
     min-height: 100%;
-  }
+  } */
 
 
 
