@@ -164,7 +164,7 @@ body {
   /* Add a dark overlay */
   position: relative;
   margin: 0;
-  font-family: "Teachers", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -1071,6 +1071,10 @@ main {
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
+
+.portfolio-heading {
+  color: #f8e702;
+}
 
 .filter-buttons {
   display: flex;
