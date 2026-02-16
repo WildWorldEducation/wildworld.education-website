@@ -1096,6 +1096,10 @@ main {
   border-radius: 5px;
 }
 
+.portfolio-page section li {
+  list-style: circle !important;
+}
+
 .screenshots img {
   max-height: 400px;
   margin: auto;
