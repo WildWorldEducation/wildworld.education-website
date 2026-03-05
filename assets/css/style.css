@@ -677,7 +677,7 @@ main {
 }
 
 .testimonials-title {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .testimonials-list {
@@ -1793,10 +1793,6 @@ textarea.form-input::-webkit-resizer {
   }
 
   /* testimonials */
-
-  .testimonials-title {
-    margin-bottom: 25px;
-  }
 
   .testimonials-list {
     gap: 30px;
