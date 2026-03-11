@@ -61,6 +61,16 @@
         .article-title {
             margin-bottom: 10px;
         }
+
+        iframe[src*="youtube.com/embed"] {
+            display: block;
+            width: min(100%, 315px);
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 315 / 560;
+            margin-inline: auto;
+            border: 0;
+        }
     </style>
 </head>
 

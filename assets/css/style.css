@@ -351,6 +351,10 @@ main {
   border-radius: 20px;
 }
 
+.info-content {
+  text-wrap: balance;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -419,9 +423,9 @@ main {
 }
 
 .contacts-list {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 16px; */
 }
 
 .contact-item {
@@ -593,6 +597,22 @@ main {
   box-shadow: var(--shadow-2);
   z-index: 1;
   color: white;
+}
+
+/* Responsive Youtube Embed */
+iframe[src*="youtube.com/embed"] {
+  display: block;
+  width: min(100%, 560px);
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-inline: auto;
+  border: 0;
+}
+
+iframe[width="315"][height="560"][src*="youtube.com/embed"] {
+  width: min(100%, 315px);
+  aspect-ratio: 315 / 560;
 }
 
 .service-item::before {
@@ -1691,7 +1711,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .sidebar-info {
-    gap: 25px;
+    gap: 0px;
   }
 
   .avatar-box {
@@ -1730,7 +1750,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .contacts-list {
-    gap: 20px;
+    /* gap: 20px; */
   }
 
   .contact-info {
@@ -1991,8 +2011,8 @@ textarea.form-input::-webkit-resizer {
    */
 
   .contacts-list {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 15px;
+    /* grid-template-columns: 1fr 1fr;
+    gap: 30px 15px; */
   }
 
 
@@ -2141,7 +2161,7 @@ textarea.form-input::-webkit-resizer {
     position: relative;
     width: max-content;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1300px;
   }
 
 
@@ -2150,7 +2170,7 @@ textarea.form-input::-webkit-resizer {
    * NAVBAR
    */
 
-  .navbar {
+  /* .navbar {
     position: relative;
     bottom: auto;
     top: 0;
@@ -2169,7 +2189,7 @@ textarea.form-input::-webkit-resizer {
 
   .navbar-link {
     font-weight: var(--fw-500);
-  }
+  } */
 
 
 
@@ -2284,7 +2304,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: center;
     align-items: stretch;
     gap: 25px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin-inline: auto;
   }
 
@@ -2306,7 +2326,7 @@ textarea.form-input::-webkit-resizer {
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 10px;
     z-index: 1;
   }
 
@@ -2315,11 +2335,10 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 150px;
+    width: 200px;
   }
 
   .info-content .name {
-    white-space: nowrap;
     text-align: center;
   }
 
@@ -2337,7 +2356,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .contacts-list {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
   }
 
   .contact-info :is(.contact-link) {
