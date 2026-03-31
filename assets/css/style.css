@@ -961,6 +961,11 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
   list-style: circle !important;
 }
 
+.case-studies .service-item:hover .project-item-icon-box {
+  --scale: 1;
+  opacity: 1;
+}
+
 
 
 /*-----------------------------------*\
@@ -1270,7 +1275,8 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
   transition: var(--transition-1);
 }
 
-.project-item>a:hover .project-item-icon-box {
+.project-item>a:hover .project-item-icon-box,
+.project-item:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
