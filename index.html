@@ -473,17 +473,44 @@
 					<h2 class="h2 article-title">Live Products</h2>
 				</header> -->
 
-				<!-- Filter Buttons -->
-				<div class="filter-buttons">
-					<button class="filter-btn" data-category="all">All</button>
-					<button class="filter-btn" data-category="ai-tutor">AI Tutor</button>
-					<button class="filter-btn" data-category="learning-content-platform">Learning Platform
-					</button>
-					<button class="filter-btn" data-category="game">Game</button>
-					<button class="filter-btn" data-category="simulation">Simulation</button>
-					<button class="filter-btn" data-category="k-12">K-12</button>
-					<button class="filter-btn" data-category="skill-progression">Skill Progression</button>
-					<button class="filter-btn" data-category="narrative-learning">Narrative Learning</button>
+				<!-- Filter Dropdowns -->
+				<div class="filter-dropdowns" aria-label="Case study filters">
+					<div class="filter-group">
+						<label for="type-filter">Type</label>
+						<select id="type-filter" class="filter-dropdown" data-filter-group="type">
+							<option value="all">All Types</option>
+							<option value="game">Game</option>
+							<option value="simulation">Simulation</option>
+							<option value="learning-content-platform">Learning Platform</option>
+						</select>
+					</div>
+
+					<div class="filter-group">
+						<label for="age-filter">Age</label>
+						<select id="age-filter" class="filter-dropdown" data-filter-group="age">
+							<option value="all">All Ages</option>
+							<option value="k-12">K-12</option>
+						</select>
+					</div>
+
+					<div class="filter-group">
+						<label for="subject-filter">Subject</label>
+						<select id="subject-filter" class="filter-dropdown" data-filter-group="subject">
+							<option value="all">All Subjects</option>
+							<option value="financial-education">Financial Education</option>
+							<option value="career-assessment">Career Assessment</option>
+						</select>
+					</div>
+
+					<div class="filter-group">
+						<label for="features-filter">Features</label>
+						<select id="features-filter" class="filter-dropdown" data-filter-group="features">
+							<option value="all">All Features</option>
+							<option value="ai-tutor">AI Tutor</option>
+							<option value="skill-progression">Skill Progression</option>
+							<option value="narrative-learning">Narrative Learning</option>
+						</select>
+					</div>
 				</div>
 
 
@@ -491,7 +518,8 @@
 					<ul class="project-list">
 
 						<!-- Junior Naira Card-> -->
-						<li class="project-item active" data-filter-item data-category="simulation k-12">
+						<li class="project-item active" data-filter-item
+							data-category="simulation k-12 financial-education">
 							<a href="live/junior_naira_card.html" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -512,7 +540,7 @@
 
 						<!-- Money Code Quest-> -->
 						<li class="project-item active" data-filter-item
-							data-category="simulation learning-content-platform k-12">
+							data-category="simulation learning-content-platform k-12 financial-education">
 							<a href="live/money_code_quest.html" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -654,7 +682,8 @@
 						</li>
 
 						<!-- Career Assessment Game Design-> -->
-						<li class="project-item active" data-filter-item data-category="simulation narrative-learning">
+						<li class="project-item active" data-filter-item
+							data-category="simulation narrative-learning career-assessment">
 							<a href="live/career_assessment.html" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -709,19 +738,40 @@
 
 				<section class="projects">
 
-					<!-- Filter Buttons -->
-					<div class="filter-buttons">
-						<button class="filter-btn" data-category="all">All</button>
-						<button class="filter-btn" data-category="ai-tutor">AI Tutor</button>
-						<button class="filter-btn" data-category="learning-content-platform">Learning Platform
-						</button>
-						<button class="filter-btn" data-category="game">Game</button>
-						<button class="filter-btn" data-category="simulation">Simulation</button>
+					<!-- Filter Dropdowns -->
+					<div class="filter-dropdowns" aria-label="Prototype filters">
+						<div class="filter-group">
+							<label for="prototype-type-filter">Type</label>
+							<select id="prototype-type-filter" class="filter-dropdown" data-filter-group="type">
+								<option value="all">All Types</option>
+								<option value="game">Game</option>
+								<option value="simulation">Simulation</option>
+								<option value="learning-content-platform">Learning Platform</option>
+							</select>
+						</div>
+
+						<div class="filter-group">
+							<label for="prototype-subject-filter">Subject</label>
+							<select id="prototype-subject-filter" class="filter-dropdown" data-filter-group="subject">
+								<option value="all">All Subjects</option>
+								<option value="physics">Physics</option>
+								<option value="language">Language</option>
+							</select>
+						</div>
+
+						<div class="filter-group">
+							<label for="prototype-features-filter">Features</label>
+							<select id="prototype-features-filter" class="filter-dropdown" data-filter-group="features">
+								<option value="all">All Features</option>
+								<option value="ai-tutor">AI Tutor</option>
+								<option value="multiplayer">Multiplayer</option>
+							</select>
+						</div>
 					</div>
 					<ul class="project-list">
 
 						<!-- VR Physics Game -->
-						<li class="project-item active" data-filter-item data-category="simulation ai-tutor">
+						<li class="project-item active" data-filter-item data-category="simulation ai-tutor physics">
 							<a href="/prototypes/physics_vr.html" target="_blank">
 								<div class="project" data-projects-item>
 									<figure class="project-img">
@@ -754,7 +804,7 @@
 
 						<!-- Strategy Game -->
 						<li class="project-item  active" data-filter-item
-							data-category="game learning-content-platform">
+							data-category="game learning-content-platform multiplayer">
 							<a href="/prototypes/strategy_game.html" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -798,7 +848,7 @@
 						</li>
 
 						<!-- AI Tutor -->
-						<li class="project-item  active" data-filter-item data-category="ai-tutor">
+						<li class="project-item  active" data-filter-item data-category="ai-tutor physics">
 							<a href="/prototypes/animated_tutor.html" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -833,7 +883,7 @@
 						</li>
 
 						<!-- Wild Words -->
-						<li class="project-item  active" data-filter-item data-category="game">
+						<li class="project-item  active" data-filter-item data-category="game language">
 							<a href="https://d2uuvbq5o02zxr.cloudfront.net/" target="_blank">
 
 								<div class="project" data-projects-item>
@@ -869,13 +919,17 @@
 
 				<section class="projects">
 					<p>Projects where I contributed to learning design, UX, or development as part of a larger team.</p>
-					<!-- Filter Buttons -->
-					<div class="filter-buttons">
-						<button class="filter-btn" data-category="all">All</button>
-						<button class="filter-btn" data-category="learning-content-platform">Learning Platform
-						</button>
-						<button class="filter-btn" data-category="game">Game</button>
-						<button class="filter-btn" data-category="simulation">Simulation</button>
+					<!-- Filter Dropdowns -->
+					<div class="filter-dropdowns" aria-label="Contribution filters">
+						<div class="filter-group">
+							<label for="contributions-type-filter">Type</label>
+							<select id="contributions-type-filter" class="filter-dropdown" data-filter-group="type">
+								<option value="all">All Types</option>
+								<option value="game">Game</option>
+								<option value="simulation">Simulation</option>
+								<option value="learning-content-platform">Learning Platform</option>
+							</select>
+						</div>
 					</div>
 					<ul class="project-list">
 

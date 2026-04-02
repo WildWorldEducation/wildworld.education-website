@@ -204,22 +204,31 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // });
 
 
-// Portfolio filter buttons
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projectItems = document.querySelectorAll(".project-item");
+// Portfolio filter dropdowns
+const filterDropdowns = document.querySelectorAll(".filter-dropdown");
 
-filterButtons.forEach(button => {
-  button.addEventListener("click", () => {
+const applyProjectFilters = () => {
+  if (!filterDropdowns.length || !filterItems.length) return;
 
-    const category = button.getAttribute("data-category");
-    console.log(category);
+  const selectedValues = Array.from(filterDropdowns).map((dropdown) => dropdown.value);
 
-    projectItems.forEach(item => {
-      if (item.getAttribute("data-category").includes(category) || category === "all") {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
-    });
+  filterItems.forEach((item) => {
+    const categories = (item.getAttribute("data-category") || "").split(" ");
+
+    const matchesAllFilters = selectedValues.every(
+      (value) => value === "all" || categories.includes(value)
+    );
+
+    if (matchesAllFilters) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
   });
+};
+
+filterDropdowns.forEach((dropdown) => {
+  dropdown.addEventListener("change", applyProjectFilters);
 });
+
+applyProjectFilters();

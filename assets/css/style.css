@@ -1101,18 +1101,37 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
   color: #f8e702;
 }
 
-.filter-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+.filter-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 22px;
 }
 
-.filter-btn {
-  margin-top: 5px;
-  border-radius: 15px;
-  background-color: silver;
-  width: fit-content;
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
+
+.filter-dropdown {
+  appearance: none;
+  background: var(--eerie-black-2);
+  color: var(--light-gray);
+  border: 1px solid var(--jet);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: var(--fs-6);
+}
+
+.filter-dropdown:focus {
+  border-color: var(--orange-yellow-crayola);
 }
 
 .portfolio-page section {
