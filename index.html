@@ -130,15 +130,11 @@
 				<ul class="navbar-list">
 
 					<li class="navbar-item">
-						<button class="navbar-link active" data-nav-link>About</button>
+						<button class="navbar-link active" data-nav-link>Case studies</button>
 					</li>
 
 					<li class="navbar-item">
-						<button class="navbar-link" data-nav-link>My story</button>
-					</li>
-
-					<li class="navbar-item">
-						<button class="navbar-link" data-nav-link>Case studies</button>
+						<button class="navbar-link" data-nav-link>About</button>
 					</li>
 
 					<li class="navbar-item">
@@ -152,132 +148,543 @@
 				</ul>
 			</nav>
 
-			<!--- #ABOUT  -->
+			<!--- #CASE STUDIES  -->
 
-			<article class="active" data-page="about">
-				<!-- Intro -->
-				<section class="about-text">
-					<header>
+			<article class="work active" data-page="case studies">
+				<!-- <header>
+					<h2 class="h2 article-title">Live Products</h2>
+				</header> -->
 
-					</header>
-					<h1 class="service-title">
-						Educational Games and Simulations
-					</h1>
-					<p>Combining instructional design, UX design, game design, and full-stack
-						development.
-					</p>
-
-					<!-- <button style="margin-top:30px" class="cta-btn"
-						onclick="window.location.href='mailto:jonathandyason@gmail.com'">Email me</button> -->
-
-				</section>
-
-
-
-
-				<!--- Case Studies -->
-				<section class="case-studies">
-					<h2 class="h3">Case Studies</h2>
-					<!-- Case Study 1 -->
-					<div class="service-item">
-						<iframe width="560" height="315"
-							src="https://www.youtube.com/embed/6M8ncUiM4bo?si=lvH6GJD4cVhixXlq"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						<p class="h4"><i>Turning a 100-Question Career Questionnaire into an Interactive
-								Learning Experience</i></p>
-
+				<!-- Filter Dropdowns -->
+				<div class="filter-dropdowns" aria-label="Case study filters">
+					<div class="filter-group">
+						<select id="type-filter" class="filter-dropdown" data-filter-group="type">
+							<option value="all">All Types</option>
+							<option value="game">Game</option>
+							<option value="simulation">Simulation</option>
+							<option value="learning-content-platform">Learning Platform</option>
+						</select>
 					</div>
 
-					<div class="service-item">
-						<iframe width="315" height="560"
-							src="https://www.youtube.com/embed/XyZPRHGzZFM?si=Q3pr7oRd85g7EgH7"
-							title="YouTube video player" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen></iframe>
-
-
-						<p class="h4"><i>Creating a Mobile Learning Game to Teach Financial Literacy to Children (Ages
-								9–11)</i></p>
-
+					<div class="filter-group">
+						<select id="age-filter" class="filter-dropdown" data-filter-group="age">
+							<option value="all">All Ages</option>
+							<option value="k-12">K-12</option>
+						</select>
 					</div>
 
-					<!-- Parrhesia.io -->
-					<div class="service-item">
-						<div class="service-content-box">
-							<iframe width="560" height="315"
-								src="https://www.youtube.com/embed/VRQ47XRBApg?si=z70HhpoE4HttW3cz"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<p class="h4 service-item-title"><i>Building a Large-Scale Learning Platform with Skill
-									Trees,
-									AI Tutoring,
-									and Multi-Role Access</i>
-							<p>
-						</div>
+					<div class="filter-group">
+						<select id="subject-filter" class="filter-dropdown" data-filter-group="subject">
+							<option value="all">All Subjects</option>
+							<option value="financial-education">Financial Education</option>
+							<option value="career-assessment">Career Assessment</option>
+						</select>
 					</div>
+
+					<div class="filter-group">
+						<select id="features-filter" class="filter-dropdown" data-filter-group="features">
+							<option value="all">All Features</option>
+							<option value="ai-tutor">AI Tutor</option>
+							<option value="skill-progression">Skill Progression</option>
+							<option value="narrative-learning">Narrative Learning</option>
+						</select>
+					</div>
+				</div>
+
+
+				<section class="projects">
+					<ul class="project-list">
+
+						<!-- Junior Naira Card-> -->
+						<li class="project-item active" data-filter-item
+							data-category="simulation k-12 financial-education">
+							<a href="live/junior_naira_card.html" target="_blank">
+
+								<div class="project" data-projects-item>
+
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/junior_naira_card/jnc1.png"
+											alt="Finance education app for kids" loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Junior Naira Card</h3>
+									<p class="project-description">Financial literacy simulation for Nigerian kids</p>
+
+								</div>
+							</a>
+						</li>
+
+						<!-- Money Code Quest-> -->
+						<li class="project-item active" data-filter-item
+							data-category="simulation learning-content-platform k-12 financial-education">
+							<a href="live/money_code_quest.html" target="_blank">
+
+								<div class="project" data-projects-item>
+
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/mcq_1.png" alt="Finance education app for kids"
+											loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>MoneyCode Quest</h3>
+									<p class="project-description">Money management learning platform for kids</p>
+								</div>
+							</a>
+						</li>
+
+						<!-- Wizling.ai -->
+						<li class="project-item active" data-filter-item data-category="ai-tutor k-12">
+							<a href="live/wizling.html" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/wizling.JPG" alt="AI tutor" loading="lazy"
+											data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Wizling.ai</h3>
+									<p class="project-description">Speech-to-speech AI tutoring web app for young kids
+									</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link"
+														href="https://collinsinstitute.org/" target="_blank">Collins
+														Institute</a></p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To tutor young kids.</p>
+											</li>
+											<li>
+												<p><strong>Description: </strong>Speech to speech AI tutoring web
+													application.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
+													OpenAI (Realtime API)</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text" href="https://wizling.ai" data-projects-link>link</a>
+								</div>
+							</a>
+						</li>
+
+						<!-- Parrhesia -->
+						<li class="project-item  active" data-filter-item
+							data-category="learning-content-platform ai-tutor k-12 skill-progression">
+							<a href=" live/parrhesia.html" target="_blank">
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/parrhesia/1.jpg" alt="online school with ai features"
+											loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Parrhesia.io</h3>
+									<p class="project-description">Online school with AI tutors and skill-tree
+										progression</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link"
+														href="https://collinsinstitute.org/" target="_blank">The Collins
+														Institute</a></p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To provide an alternative to the
+													traditional schooling system.</p>
+											</li>
+											<li>
+												<p><strong>Description: </strong>An Learning Platform with AI
+													tutors and a skilltree
+													progression system.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
+													OpenAI (Assistants API, Completions API, Dalle API, TTS, Whisper),
+													socket.io, D3</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text" href="https://parrhesia.io/" data-projects-link>link</a>
+								</div>
+							</a>
+						</li>
+
+						<!-- Visible Bottleneck Web App and Game -->
+						<li class="project-item  active" data-filter-item data-category="game">
+							<a href="live/visible_bottleneck.html" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/visible-bottleneck.jpg"
+											alt="psychology web app and game" loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>VisibleBottleneck.org</h3>
+									<p class="project-description">Minigames testing attention and multitasking for UCSD
+										research</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link" href="#" target="_blank">Hal
+														Pashler - UCSD</a></p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To showcase this professor's study on
+													attention.</p>
+											</li>
+											<li>
+												<p><strong>Description: </strong>Web application with minigames to test
+													attention and
+													multitasking</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
+													Phaser</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text" href="https://visiblebottleneck.org"
+										data-projects-link>link</a>
+								</div>
+							</a>
+						</li>
+
+						<!-- Career Assessment Game Design-> -->
+						<li class="project-item active" data-filter-item
+							data-category="simulation narrative-learning career-assessment">
+							<a href="live/career_assessment.html" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/career_assessment_1.jpg" alt="Career assessment game"
+											loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Career Assessment Game Design</h3>
+									<p class="project-description">Narrative game design helping players choose a career
+										path</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link"
+														href="https://excellence-solutions.org/"
+														target="_blank">Excellence Solutions</a>
+												</p>
+											</li>
+											<li>
+												<p><strong>Purpose:</strong> To help players choose a career path</p>
+											</li>
+											<li>
+												<p><strong>Description: </strong>Game and narrative design, which was
+													developed by someone else
+												</p>
+											</li>
+											<li>
+												<p><strong>Tech stack:</strong>Episode Interactive writer</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text" href="http://episodeinteractive.com/s/6465560349442048"
+										data-projects-link>link</a>
+								</div>
+							</a>
+						</li>
+
 					</ul>
+
 				</section>
+			</article>
 
-				<!--- Offers -->
-				<!-- <section class="service">
-					<h2 class="h3">Examples of services</h2> -->
-				<!-- Educational Game Prototype -->
-				<!-- <div class="service-item service-item-1">
-						<div class="service-content-box">
-							<h3 class="h4 service-item-title service-item-1-title">Prototype</h3>							
-							<h4 class="service-item-1-title">Best for</h4>
-							<p class="service-item-text service-item-1-text">
-								When you have an idea that you want to create and try out.
-							</p>
-							<h4 class="service-item-1-title">Outcome</h4>
-							<p class="service-item-text service-item-1-text">A playable educational game, simulation or
-								platform .</p>
+			<!--- #UNFINISHED WORK  -->
+
+			<article class="prototypes" data-page="unfinished work">
+				<!-- <header>
+					<h2 class="h2 article-title">Prototypes</h2>
+				</header> -->
+
+				<section class="projects">
+
+					<!-- Filter Dropdowns -->
+					<div class="filter-dropdowns" aria-label="Prototype filters">
+						<div class="filter-group">
+							<select id="prototype-type-filter" class="filter-dropdown" data-filter-group="type">
+								<option value="all">All Types</option>
+								<option value="game">Game</option>
+								<option value="simulation">Simulation</option>
+								<option value="learning-content-platform">Learning Platform</option>
+							</select>
+						</div>
+
+						<div class="filter-group">
+							<select id="prototype-subject-filter" class="filter-dropdown" data-filter-group="subject">
+								<option value="all">All Subjects</option>
+								<option value="physics">Physics</option>
+								<option value="language">Language</option>
+							</select>
+						</div>
+
+						<div class="filter-group">
+							<select id="prototype-features-filter" class="filter-dropdown" data-filter-group="features">
+								<option value="all">All Features</option>
+								<option value="ai-tutor">AI Tutor</option>
+								<option value="multiplayer">Multiplayer</option>
+							</select>
 						</div>
 					</div>
-					<p>&nbsp;</p> -->
-				<!-- Educational Game or Simulation Module -->
-				<!-- <div class="service-item service-item-2">
-						<div class="service-content-box">
-							<h3 class="h4 service-item-title service-item-2-title">Single product
-							</h3>							
-							<h4 class="service-item-2-title">Best for</h4>
-							<p class="service-item-text service-item-2-text">
-								When you need an educational game, simulation or other tool built from concept to
-								delivery
-							</p>
+					<ul class="project-list">
 
-							<h4 class="service-item-2-title">Outcome</h4>
-							<p class="service-item-text service-item-2-text">A complete educational tool
-								designed around clear
-								learning
-								outcomes.</p>
+						<!-- VR Physics Game -->
+						<li class="project-item active" data-filter-item data-category="simulation ai-tutor physics">
+							<a href="/prototypes/physics_vr.html" target="_blank">
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/vr-physics-game.jpg"
+											alt="physics virtual reality game" loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>VR Physics Game</h3>
+									<p class="project-description">VR simulation teaching physics concepts to school
+										kids</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong>Coder Fairy</p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To teach physics to school kids.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Unity</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text"
+										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
+										data-projects-link>link</a>
+								</div>
+						</li>
+
+						<!-- Strategy Game -->
+						<li class="project-item  active" data-filter-item
+							data-category="game learning-content-platform multiplayer">
+							<a href="/prototypes/strategy_game.html" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/strategy_game/3.png"
+											alt="multiplayer strategic thinking game" loading="lazy"
+											data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Multiplayer Strategic Thinking Game
+									</h3>
+									<p class="project-description">Single and multiplayer web game for strategic
+										thinking</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link"
+														href="https://consciouscoding.com/" target="_blank">Conscious
+														Coding</a></p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>A single and multiplayer
+													web game to
+													teach strategic thinking.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
+													Unity WebGL, Photon Unity Networking (PUN)</p>
+											</li>
+										</ul>
+										Link below shows an example single player level.
+									</div>
+									<a class="projects-text"
+										href="https://pathways-single-player.s3.us-east-1.amazonaws.com/index.html"
+										data-projects-link>single player example
+										game</a>
+								</div>
+							</a>
+						</li>
+
+						<!-- AI Tutor -->
+						<li class="project-item  active" data-filter-item data-category="ai-tutor physics">
+							<a href="/prototypes/animated_tutor.html" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy"
+											data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Animated AI Tutor</h3>
+									<p class="project-description">Animated AI tutor prototype for physics education</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong><a class="link" href="#"
+														target="_blank">Coder Fairy</a></p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To teach physics.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Unity</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text"
+										href="http://ai-physic-tutor.s3-website-us-east-1.amazonaws.com"
+										data-projects-link>link</a>
+								</div>
+							</a>
+						</li>
+
+						<!-- Wild Words -->
+						<li class="project-item  active" data-filter-item data-category="game language">
+							<a href="https://d2uuvbq5o02zxr.cloudfront.net/" target="_blank">
+
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/wild-words.png"
+											alt="strategic thinking game level editor" loading="lazy"
+											data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Foreign Language Learning Suite of
+										Games for Kids
+									</h3>
+									<p class="project-description">Suite of games for kids learning foreign languages
+									</p>
+
+									<a class="projects-text" href="https://d2uuvbq5o02zxr.cloudfront.net/"
+										data-projects-link>map editor</a>
+								</div>
+							</a>
+						</li>
+
+				</section>
+			</article>
+
+			<!--- #CONTRIBUTIONS  -->
+
+			<article class="contributions" data-page="contributions">
+				<!-- <header>
+					<h2 class="h2 article-title">Contributions</h2>
+				</header> -->
+
+				<section class="projects">
+					<p>Projects where I contributed to learning design, UX, or development as part of a larger team.</p>
+					<!-- Filter Dropdowns -->
+					<div class="filter-dropdowns" aria-label="Contribution filters">
+						<div class="filter-group">
+							<select id="contributions-type-filter" class="filter-dropdown" data-filter-group="type">
+								<option value="all">All Types</option>
+								<option value="game">Game</option>
+								<option value="simulation">Simulation</option>
+								<option value="learning-content-platform">Learning Platform</option>
+							</select>
 						</div>
 					</div>
-					<p>&nbsp;</p> -->
-				<!-- Learning Platforms -->
+					<ul class="project-list">
 
-				<!-- <div class="service-item service-item-3">
-						<div class="service-content-box">
-							<h3 class="h4 service-item-title service-item-3-title">Learning platform
-							</h3>							
-							<h4 class="service-item-3-title">Best for</h4>
-							<p class="service-item-text service-item-3-text">
-								When you want a mobile or web application containing multiple learning
-								experiences.
-							</p>
+						<!-- Ocuweld -->
+						<li class="project-item active" data-filter-item data-category="simulation">
+							<a href="#" target="_blank">
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/ocuweld-1.jpeg" alt="Ocuweld VR Welding Simulation"
+											loading="lazy" data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Ocuweld VR Welding Simulation</h3>
+									<p class="project-description">VR simulation for welding practice in vocational
+										training</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong>Simlabs</p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To allow welding students to practice
+													welding in VR.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Unity, Canvas LMS</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text"
+										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
+										data-projects-link>link</a>
+								</div>
+						</li>
 
-							<h4 class="service-item-3-title">Outcome</h4>
+						<!-- Arratreeni -->
+						<li class="project-item active" data-filter-item data-category="game learning-content-platform">
+							<a href="contributions/arratreeni.html" target="_blank">
+								<div class="project" data-projects-item>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img src="./assets/images/arratreeni.webp" alt="Arratreeni" loading="lazy"
+											data-projects-image-1>
+									</figure>
+									<h3 class="project-title" data-projects-title>Arratreeni</h3>
+									<p class="project-description">Finnish word pronunciation game for kids</p>
+									<div class="projects-text" data-projects-text>
+										<ul>
+											<li>
+												<p><strong>Client: </strong>Arratreeni</p>
+											</li>
+											<li>
+												<p><strong>Purpose: </strong>To help kids learn to pronounce Finnish
+													words.</p>
+											</li>
+											<li>
+												<p><strong>Tech stack: </strong>Unity</p>
+											</li>
+										</ul>
+									</div>
+									<a class="projects-text"
+										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
+										data-projects-link>link</a>
+								</div>
+						</li>
 
-							<p class="service-item-text service-item-3-text">Web or mobile application that can host
-								educational content</p>
+					</ul>
 
-						</div>
-					</div>
-				</section> -->
+				</section>
+			</article>
 
+
+			<!--- #HOW I WORK  -->
+			<article class="how-i-work" data-page="about">
 
 				<!--- Testimonials -->
 
@@ -347,649 +754,6 @@
 				</section>
 
 
-				<!--
-          - testimonials modal
-        -->
-				<div class="modal-container" data-modal-container>
-					<div class="overlay" data-overlay></div>
-					<section class="testimonials-modal">
-						<button class="modal-close-btn" data-modal-close-btn>
-							<ion-icon name="close-outline"></ion-icon>
-						</button>
-						<div class="modal-img-wrapper">
-							<figure class="modal-avatar-box">
-								<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-							</figure>
-							<img src="./assets/images/icon-quote.svg" alt="quote icon">
-						</div>
-
-						<div class="modal-content">
-							<h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-							<time datetime="2021-06-14">14 June, 2021</time>
-							<div data-modal-text>
-								<p>
-									Richard was hired to create a corporate identity. We were very pleased with the work
-									done. She has a
-									lot of experience
-									and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
-									ullamcous cididt
-									consectetur adipiscing
-									elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-								</p>
-							</div>
-						</div>
-					</section>
-				</div>
-
-
-				<!--- Clients -->
-
-				<!-- <section class="clients">
-					<h3 class="h3 clients-title">Clients</h3>
-
-					<ul class="clients-list has-scrollbar"> -->
-
-				<!-- Collins Institute -->
-				<!-- <li class="clients-item">
-							<a href="https://collinsinstitute.org/" target="_blank">
-								<img height="100" src="./assets/images/collins-institute-logo.png" alt="client logo">
-							</a>
-						</li> -->
-
-				<!-- Arratreeni Oy-->
-				<!-- <li class="clients-item">
-							<a href="https://arratreeni.fi/" target="_blank">
-								<img height="100" src="./assets/images/arratreeni-logo.svg" alt="client logo">
-							</a>
-						</li>
- -->
-				<!-- MoneyCode Lab-->
-				<!-- <li class="clients-item">
-							<a href="https://moneycodelab.com/" target="_blank">
-								<img height="100" src="./assets/images/money-code-lab-logo.png" alt="client logo">
-							</a>
-						</li> -->
-
-				<!-- Mellow Yellow Sports-->
-				<!-- <li class="clients-item">
-							<a href="https://mellowyellowsports.com/" target="_blank">
-								<img src="./assets/images/mellow-yellow-sports-logo.jpg" alt="client logo">
-							</a>
-						</li> -->
-
-
-
-				<!-- <li class="clients-item">
-              <a href="https://ucsd.edu/">
-                <img src="./assets/images/ucsd-seal.svg" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="https://funuage-game.web.app/">
-                <img src="./assets/images/funuage-game-logo.png" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-				<!-- <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li> -->
-
-				</ul>
-				</section>
-			</article>
-
-
-			<!--- #CASE STUDIES  -->
-
-			<article class="work" data-page="case studies">
-				<!-- <header>
-					<h2 class="h2 article-title">Live Products</h2>
-				</header> -->
-
-				<!-- Filter Dropdowns -->
-				<div class="filter-dropdowns" aria-label="Case study filters">
-					<div class="filter-group">
-						<label for="type-filter">Type</label>
-						<select id="type-filter" class="filter-dropdown" data-filter-group="type">
-							<option value="all">All Types</option>
-							<option value="game">Game</option>
-							<option value="simulation">Simulation</option>
-							<option value="learning-content-platform">Learning Platform</option>
-						</select>
-					</div>
-
-					<div class="filter-group">
-						<label for="age-filter">Age</label>
-						<select id="age-filter" class="filter-dropdown" data-filter-group="age">
-							<option value="all">All Ages</option>
-							<option value="k-12">K-12</option>
-						</select>
-					</div>
-
-					<div class="filter-group">
-						<label for="subject-filter">Subject</label>
-						<select id="subject-filter" class="filter-dropdown" data-filter-group="subject">
-							<option value="all">All Subjects</option>
-							<option value="financial-education">Financial Education</option>
-							<option value="career-assessment">Career Assessment</option>
-						</select>
-					</div>
-
-					<div class="filter-group">
-						<label for="features-filter">Features</label>
-						<select id="features-filter" class="filter-dropdown" data-filter-group="features">
-							<option value="all">All Features</option>
-							<option value="ai-tutor">AI Tutor</option>
-							<option value="skill-progression">Skill Progression</option>
-							<option value="narrative-learning">Narrative Learning</option>
-						</select>
-					</div>
-				</div>
-
-
-				<section class="projects">
-					<ul class="project-list">
-
-						<!-- Junior Naira Card-> -->
-						<li class="project-item active" data-filter-item
-							data-category="simulation k-12 financial-education">
-							<a href="live/junior_naira_card.html" target="_blank">
-
-								<div class="project" data-projects-item>
-
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/junior_naira_card/jnc1.png"
-											alt="Finance education app for kids" loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Junior Naira Card</h3>
-								</div>
-							</a>
-						</li>
-
-						<!-- Money Code Quest-> -->
-						<li class="project-item active" data-filter-item
-							data-category="simulation learning-content-platform k-12 financial-education">
-							<a href="live/money_code_quest.html" target="_blank">
-
-								<div class="project" data-projects-item>
-
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/mcq_1.png" alt="Finance education app for kids"
-											loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>MoneyCode Quest</h3>
-								</div>
-							</a>
-						</li>
-
-						<!-- Wizling.ai -->
-						<li class="project-item active" data-filter-item data-category="ai-tutor k-12">
-							<a href="live/wizling.html" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/wizling.JPG" alt="AI tutor" loading="lazy"
-											data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Wizling.ai</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link"
-														href="https://collinsinstitute.org/" target="_blank">Collins
-														Institute</a></p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To tutor young kids.</p>
-											</li>
-											<li>
-												<p><strong>Description: </strong>Speech to speech AI tutoring web
-													application.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
-													OpenAI (Realtime API)</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text" href="https://wizling.ai" data-projects-link>link</a>
-								</div>
-							</a>
-						</li>
-
-						<!-- Parrhesia -->
-						<li class="project-item  active" data-filter-item
-							data-category="learning-content-platform ai-tutor k-12 skill-progression">
-							<a href=" live/parrhesia.html" target="_blank">
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/parrhesia/1.jpg" alt="online school with ai features"
-											loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Parrhesia.io</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link"
-														href="https://collinsinstitute.org/" target="_blank">The Collins
-														Institute</a></p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To provide an alternative to the
-													traditional schooling system.</p>
-											</li>
-											<li>
-												<p><strong>Description: </strong>An Learning Platform with AI
-													tutors and a skilltree
-													progression system.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
-													OpenAI (Assistants API, Completions API, Dalle API, TTS, Whisper),
-													socket.io, D3</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text" href="https://parrhesia.io/" data-projects-link>link</a>
-								</div>
-							</a>
-						</li>
-
-						<!-- Visible Bottleneck Web App and Game -->
-						<li class="project-item  active" data-filter-item data-category="game">
-							<a href="live/visible_bottleneck.html" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/visible-bottleneck.jpg"
-											alt="psychology web app and game" loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>VisibleBottleneck.org</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link" href="#" target="_blank">Hal
-														Pashler - UCSD</a></p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To showcase this professor's study on
-													attention.</p>
-											</li>
-											<li>
-												<p><strong>Description: </strong>Web application with minigames to test
-													attention and
-													multitasking</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
-													Phaser</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text" href="https://visiblebottleneck.org"
-										data-projects-link>link</a>
-								</div>
-							</a>
-						</li>
-
-						<!-- Career Assessment Game Design-> -->
-						<li class="project-item active" data-filter-item
-							data-category="simulation narrative-learning career-assessment">
-							<a href="live/career_assessment.html" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/career_assessment_1.jpg" alt="Career assessment game"
-											loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Career Assessment Game Design</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link"
-														href="https://excellence-solutions.org/"
-														target="_blank">Excellence Solutions</a>
-												</p>
-											</li>
-											<li>
-												<p><strong>Purpose:</strong> To help players choose a career path</p>
-											</li>
-											<li>
-												<p><strong>Description: </strong>Game and narrative design, which was
-													developed by someone else
-												</p>
-											</li>
-											<li>
-												<p><strong>Tech stack:</strong>Episode Interactive writer</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text" href="http://episodeinteractive.com/s/6465560349442048"
-										data-projects-link>link</a>
-								</div>
-							</a>
-						</li>
-
-					</ul>
-
-				</section>
-			</article>
-
-			<!--- #UNFINISHED WORK  -->
-
-			<article class="prototypes" data-page="unfinished work">
-				<!-- <header>
-					<h2 class="h2 article-title">Prototypes</h2>
-				</header> -->
-
-				<section class="projects">
-
-					<!-- Filter Dropdowns -->
-					<div class="filter-dropdowns" aria-label="Prototype filters">
-						<div class="filter-group">
-							<label for="prototype-type-filter">Type</label>
-							<select id="prototype-type-filter" class="filter-dropdown" data-filter-group="type">
-								<option value="all">All Types</option>
-								<option value="game">Game</option>
-								<option value="simulation">Simulation</option>
-								<option value="learning-content-platform">Learning Platform</option>
-							</select>
-						</div>
-
-						<div class="filter-group">
-							<label for="prototype-subject-filter">Subject</label>
-							<select id="prototype-subject-filter" class="filter-dropdown" data-filter-group="subject">
-								<option value="all">All Subjects</option>
-								<option value="physics">Physics</option>
-								<option value="language">Language</option>
-							</select>
-						</div>
-
-						<div class="filter-group">
-							<label for="prototype-features-filter">Features</label>
-							<select id="prototype-features-filter" class="filter-dropdown" data-filter-group="features">
-								<option value="all">All Features</option>
-								<option value="ai-tutor">AI Tutor</option>
-								<option value="multiplayer">Multiplayer</option>
-							</select>
-						</div>
-					</div>
-					<ul class="project-list">
-
-						<!-- VR Physics Game -->
-						<li class="project-item active" data-filter-item data-category="simulation ai-tutor physics">
-							<a href="/prototypes/physics_vr.html" target="_blank">
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/vr-physics-game.jpg"
-											alt="physics virtual reality game" loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>VR Physics Game</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong>Coder Fairy</p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To teach physics to school kids.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Unity</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text"
-										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
-										data-projects-link>link</a>
-								</div>
-						</li>
-
-						<!-- Strategy Game -->
-						<li class="project-item  active" data-filter-item
-							data-category="game learning-content-platform multiplayer">
-							<a href="/prototypes/strategy_game.html" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/strategy_game/3.png"
-											alt="multiplayer strategic thinking game" loading="lazy"
-											data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Multiplayer Strategic Thinking Game
-									</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link"
-														href="https://consciouscoding.com/" target="_blank">Conscious
-														Coding</a></p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>A single and multiplayer
-													web game to
-													teach strategic thinking.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Node, Express, Vue, MariaDB, AWS,
-													Unity WebGL, Photon Unity Networking (PUN)</p>
-											</li>
-										</ul>
-										Link below shows an example single player level.
-									</div>
-									<a class="projects-text"
-										href="https://pathways-single-player.s3.us-east-1.amazonaws.com/index.html"
-										data-projects-link>single player example
-										game</a>
-								</div>
-							</a>
-						</li>
-
-						<!-- AI Tutor -->
-						<li class="project-item  active" data-filter-item data-category="ai-tutor physics">
-							<a href="/prototypes/animated_tutor.html" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy"
-											data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Animated AI Tutor</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong><a class="link" href="#"
-														target="_blank">Coder Fairy</a></p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To teach physics.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Unity</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text"
-										href="http://ai-physic-tutor.s3-website-us-east-1.amazonaws.com"
-										data-projects-link>link</a>
-								</div>
-							</a>
-						</li>
-
-						<!-- Wild Words -->
-						<li class="project-item  active" data-filter-item data-category="game language">
-							<a href="https://d2uuvbq5o02zxr.cloudfront.net/" target="_blank">
-
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/wild-words.png"
-											alt="strategic thinking game level editor" loading="lazy"
-											data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Foreign Language Learning Suite of
-										Games for Kids
-									</h3>
-
-									<a class="projects-text" href="https://d2uuvbq5o02zxr.cloudfront.net/"
-										data-projects-link>map editor</a>
-								</div>
-							</a>
-						</li>
-
-				</section>
-			</article>
-
-			<!--- #CONTRIBUTIONS  -->
-
-			<article class="contributions" data-page="contributions">
-				<!-- <header>
-					<h2 class="h2 article-title">Contributions</h2>
-				</header> -->
-
-				<section class="projects">
-					<p>Projects where I contributed to learning design, UX, or development as part of a larger team.</p>
-					<!-- Filter Dropdowns -->
-					<div class="filter-dropdowns" aria-label="Contribution filters">
-						<div class="filter-group">
-							<label for="contributions-type-filter">Type</label>
-							<select id="contributions-type-filter" class="filter-dropdown" data-filter-group="type">
-								<option value="all">All Types</option>
-								<option value="game">Game</option>
-								<option value="simulation">Simulation</option>
-								<option value="learning-content-platform">Learning Platform</option>
-							</select>
-						</div>
-					</div>
-					<ul class="project-list">
-
-						<!-- Ocuweld -->
-						<li class="project-item active" data-filter-item data-category="simulation">
-							<a href="#" target="_blank">
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/ocuweld-1.jpeg" alt="Ocuweld VR Welding Simulation"
-											loading="lazy" data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Ocuweld VR Welding Simulation</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong>Simlabs</p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To allow welding students to practice
-													welding in VR.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Unity, Canvas LMS</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text"
-										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
-										data-projects-link>link</a>
-								</div>
-						</li>
-
-						<!-- Arratreeni -->
-						<li class="project-item active" data-filter-item data-category="game learning-content-platform">
-							<a href="contributions/arratreeni.html" target="_blank">
-								<div class="project" data-projects-item>
-									<figure class="project-img">
-										<div class="project-item-icon-box">
-											<ion-icon name="eye-outline"></ion-icon>
-										</div>
-										<img src="./assets/images/arratreeni.webp" alt="Arratreeni" loading="lazy"
-											data-projects-image-1>
-									</figure>
-									<h3 class="project-title" data-projects-title>Arratreeni</h3>
-									<div class="projects-text" data-projects-text>
-										<ul>
-											<li>
-												<p><strong>Client: </strong>Arratreeni</p>
-											</li>
-											<li>
-												<p><strong>Purpose: </strong>To help kids learn to pronounce Finnish
-													words.</p>
-											</li>
-											<li>
-												<p><strong>Tech stack: </strong>Unity</p>
-											</li>
-										</ul>
-									</div>
-									<a class="projects-text"
-										href="https://drive.google.com/drive/folders/1GsJkV_vXB36ZJY-rExyv3Bcfof6sJcUg?usp=drive_link"
-										data-projects-link>link</a>
-								</div>
-						</li>
-
-					</ul>
-
-				</section>
-			</article>
-
-
-			<!--- #HOW I WORK  -->
-			<article class="how-i-work" data-page="my story">
 
 				<section class="about-text">
 					<div class="service-item">
@@ -1067,6 +831,42 @@
 						<p>For smaller or exploratory work, short fixed-scope engagements are also available.</p>
 					</div> -->
 				</section>
+
+
+
+				<!--
+          - testimonials modal
+        -->
+				<div class="modal-container" data-modal-container>
+					<div class="overlay" data-overlay></div>
+					<section class="testimonials-modal">
+						<button class="modal-close-btn" data-modal-close-btn>
+							<ion-icon name="close-outline"></ion-icon>
+						</button>
+						<div class="modal-img-wrapper">
+							<figure class="modal-avatar-box">
+								<img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+							</figure>
+							<img src="./assets/images/icon-quote.svg" alt="quote icon">
+						</div>
+
+						<div class="modal-content">
+							<h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+							<time datetime="2021-06-14">14 June, 2021</time>
+							<div data-modal-text>
+								<p>
+									Richard was hired to create a corporate identity. We were very pleased with the work
+									done. She has a
+									lot of experience
+									and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+									ullamcous cididt
+									consectetur adipiscing
+									elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
 
 			</article>
 

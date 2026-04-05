@@ -1316,7 +1316,8 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
 }
 
 .project-title,
-.project-category {
+.project-category,
+.project-description {
   margin-left: 10px;
 }
 
@@ -1332,6 +1333,14 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+.project-description {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  margin-top: 4px;
+  line-height: 1.4;
 }
 
 
