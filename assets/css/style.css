@@ -1123,8 +1123,8 @@ iframe[width="315"][height="560"][src*="youtube.com/embed"] {
 .filter-dropdown {
   appearance: none;
   background: var(--eerie-black-2);
-  color: var(--light-gray);
-  border: 1px solid var(--jet);
+  color: var(--vegas-gold);
+  border: 1px solid var(--vegas-gold);
   border-radius: 12px;
   padding: 10px 12px;
   font-size: var(--fs-6);
